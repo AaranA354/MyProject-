@@ -1,0 +1,95 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    color: #00f;
+    margin-top: 50px;
+    font-size: 2.5em;
+}
+
+/* Header Styles */
+header {
+    margin-bottom: 20px;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Project Button Styles */
+.project-button {
+    flex: 1;
+    max-width: 250px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff5733;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 10px 18px;
+    }
+}
